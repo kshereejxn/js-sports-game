@@ -15,13 +15,14 @@ let newTeamone_numshotsValue = Number(teamone_numshots.innerHTML) + 1;
 
 teamone_numshots.innerHTML = newTeamone_numshotsValue;
    
-document.getElementById("teamone-shoot-button").innerHTML=Math.floor(Math.random() * 2);
+let random = Math.random() *2;
+
 
 let newteamone_numgoalsValue = Number (teamone_numgoals.innerHTML);
 
 teamone_numgoals.innerHTML = newteamone_numgoalsValue;
 
-if (teamone_shoot_button.innerHTML > 0) {teamone_numgoals.innerHTML = newteamone_numgoalsValue + 1;
+if (random > 1) {teamone_numgoals.innerHTML = newteamone_numgoalsValue + 1;
 }
 })
 
@@ -32,13 +33,13 @@ let newTeamtwo_numshotsValue = Number(teamtwo_numshots.innerHTML) + 1;
 
 teamtwo_numshots.innerHTML = newTeamtwo_numshotsValue;
   
-document.getElementById("teamtwo-shoot-button").innerHTML=Math.floor(Math.random() * 2);
+let random = Math.random() * 2;
 
 let newteamtwo_numgoalsValue = Number (teamtwo_numgoals.innerHTML);
 
 teamtwo_numgoals.innerHTML = newteamtwo_numgoalsValue;
 
-if (teamtwo_shoot_button.innerHTML > 0) {teamtwo_numgoals.innerHTML = newteamtwo_numgoalsValue + 1;
+if (random > 1) {teamtwo_numgoals.innerHTML = newteamtwo_numgoalsValue + 1;
 }
 })
 
