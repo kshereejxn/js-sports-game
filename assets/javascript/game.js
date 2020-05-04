@@ -8,16 +8,14 @@ let reset_button = document.querySelector ("#reset-button");
 let num_resets = document.querySelector ("#num-resets");
 
 
-
 teamone_shoot_button.addEventListener("click",      function(){
     console.log (" shots for Team Shorts")
-    
+       
 let newTeamone_numshotsValue = Number(teamone_numshots.innerHTML) + 1;
 
 teamone_numshots.innerHTML = newTeamone_numshotsValue;
    
 document.getElementById("teamone-shoot-button").innerHTML=Math.floor(Math.random() * 2);
-
 
 let newteamone_numgoalsValue = Number (teamone_numgoals.innerHTML);
 
@@ -36,7 +34,6 @@ teamtwo_numshots.innerHTML = newTeamtwo_numshotsValue;
   
 document.getElementById("teamtwo-shoot-button").innerHTML=Math.floor(Math.random() * 2);
 
-
 let newteamtwo_numgoalsValue = Number (teamtwo_numgoals.innerHTML);
 
 teamtwo_numgoals.innerHTML = newteamtwo_numgoalsValue;
@@ -45,8 +42,19 @@ if (teamtwo_shoot_button.innerHTML > 0) {teamtwo_numgoals.innerHTML = newteamtwo
 }
 })
 
-/*reset_button.addEventListener("click", 
+reset_button.addEventListener("click", 
 function() {
 console.log (" resets have occurred");
-reset_button.innerHTML = + 1;
-})*/
+
+let newNum_resetsValue = Number(num_resets.innerHTML);
+
+num_resets.innerHTML = newNum_resetsValue + 1;
+
+if (newNum_resetsValue = 1) {
+    teamone_numshots.innerHTML = 0;
+    teamone_numgoals.innerHTML = 0
+    teamtwo_numshots.innerHTML = 0;
+    teamtwo_numgoals.innerHTML = 0;
+}
+
+})
