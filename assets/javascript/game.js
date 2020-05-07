@@ -53,9 +53,11 @@ num_resets.innerHTML = newNum_resetsValue + 1;
 
 if (newNum_resetsValue = 1) {
     teamone_numshots.innerHTML = 0;
-    teamone_numgoals.innerHTML = 0
+    teamone_numgoals.innerHTML = 0;
     teamtwo_numshots.innerHTML = 0;
     teamtwo_numgoals.innerHTML = 0;
 }
-
+else {
+    
+}
 })
