@@ -24,6 +24,7 @@ teamone_numgoals.innerHTML = newteamone_numgoalsValue;
 
 if (random > 1) {teamone_numgoals.innerHTML = newteamone_numgoalsValue + 1;
 }
+else {}
 })
 
 teamtwo_shoot_button.addEventListener("click",      function(){
@@ -41,6 +42,7 @@ teamtwo_numgoals.innerHTML = newteamtwo_numgoalsValue;
 
 if (random > 1) {teamtwo_numgoals.innerHTML = newteamtwo_numgoalsValue + 1;
 }
+else {}
 })
 
 reset_button.addEventListener("click", 
@@ -51,13 +53,24 @@ let newNum_resetsValue = Number(num_resets.innerHTML);
 
 num_resets.innerHTML = newNum_resetsValue + 1;
 
-if (newNum_resetsValue = 1) {
+
+if 
+    (teamone_numshots.innerHTML > teamtwo_numshots. innerHTML) 
+    {
+    alert("Wow! and the Shorts have won the game.");
+    }
+    else 
+    {
+    alert("The Capris have done it again. Capris for the win!");}
+
+    if (newNum_resetsValue = 1) 
+    {
     teamone_numshots.innerHTML = 0;
     teamone_numgoals.innerHTML = 0;
     teamtwo_numshots.innerHTML = 0;
     teamtwo_numgoals.innerHTML = 0;
-}
+    }
 else {
-    
-}
+
+    }
 })
